@@ -8,15 +8,16 @@ Summary:	%{_pearname} - strips down dangerous content
 Summary(pl):	%{_pearname} - wycinanie niebezpiecznej tre¶ci
 Name:		php-pear-%{_pearname}
 Version:	0.3.5
-Release:	1.2
+Release:	1.3
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	577357f384abfda65a0b50b04b8d07dd
 URL:		http://pear.php.net/package/HTML_Safe/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	missing pear(XML/HTMLSax3.php)
+Requires:	php-common >= 3:4.1.0
 Requires:	php-pear
+Requires:	php-pear-XML_HTMLSax3 >= 3.0.0-0.RC1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
