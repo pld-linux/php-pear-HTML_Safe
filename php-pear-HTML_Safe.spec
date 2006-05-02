@@ -1,18 +1,19 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		HTML
 %define		_subclass	Safe
-%define		_status		alpha
+%define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
+%define		_beta beta
 Summary:	%{_pearname} - strips down dangerous content
 Summary(pl):	%{_pearname} - wycinanie niebezpiecznej tre¶ci
 Name:		php-pear-%{_pearname}
-Version:	0.3.5
-Release:	1.3
+Version:	0.9.9
+Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	577357f384abfda65a0b50b04b8d07dd
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_beta}.tgz
+# Source0-md5:	8bbe8a4b78d1f0f4a08aa3a4f97b242b
 URL:		http://pear.php.net/package/HTML_Safe/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
