@@ -17,6 +17,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_beta}.tgz
 URL:		http://pear.php.net/package/HTML_Safe/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-common >= 3:4.1.0
 Requires:	php-pear
 Requires:	php-pear-XML_HTMLSax3 >= 3.0.0-0.RC1
