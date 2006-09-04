@@ -4,7 +4,6 @@
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
-%define		_beta beta
 Summary:	%{_pearname} - strips down dangerous content
 Summary(pl):	%{_pearname} - wycinanie niebezpiecznej tre¶ci
 Name:		php-pear-%{_pearname}
@@ -12,7 +11,7 @@ Version:	0.9.9
 Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_beta}.tgz
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}beta.tgz
 # Source0-md5:	8bbe8a4b78d1f0f4a08aa3a4f97b242b
 URL:		http://pear.php.net/package/HTML_Safe/
 BuildRequires:	php-pear-PEAR
@@ -23,9 +22,6 @@ Requires:	php-pear
 Requires:	php-pear-XML_HTMLSax3 >= 3.0.0-0.RC1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-# not available (yet)!
-%define		_noautoreq 'pear(XML/HTMLSax3.php)'
 
 %description
 This parser strips down all potentially dangerous content within HTML.
