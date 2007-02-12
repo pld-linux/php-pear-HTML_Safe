@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - strips down dangerous content
-Summary(pl):	%{_pearname} - wycinanie niebezpiecznej tre∂ci
+Summary(pl.UTF-8):   %{_pearname} - wycinanie niebezpiecznej tre≈õci
 Name:		php-pear-%{_pearname}
 Version:	0.9.9
 Release:	1
@@ -28,8 +28,8 @@ This parser strips down all potentially dangerous content within HTML.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ten parser wycina wszystkie potencjalne niebezpieczne tre∂ci z kodu
+%description -l pl.UTF-8
+Ten parser wycina wszystkie potencjalne niebezpieczne tre≈õci z kodu
 HTML.
 
 Ta klasa ma w PEAR status: %{_status}.
