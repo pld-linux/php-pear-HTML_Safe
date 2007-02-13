@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - strips down dangerous content
-Summary(pl.UTF-8):   %{_pearname} - wycinanie niebezpiecznej treści
+Summary(pl.UTF-8):	%{_pearname} - wycinanie niebezpiecznej treści
 Name:		php-pear-%{_pearname}
 Version:	0.9.9
 Release:	1
