@@ -8,7 +8,7 @@ Summary:	%{_pearname} - strips down dangerous content
 Summary(pl.UTF-8):	%{_pearname} - wycinanie niebezpiecznej treści
 Name:		php-pear-%{_pearname}
 Version:	0.9.9
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}beta.tgz
