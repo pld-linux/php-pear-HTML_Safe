@@ -7,18 +7,19 @@
 Summary:	%{_pearname} - strips down dangerous content
 Summary(pl.UTF-8):	%{_pearname} - wycinanie niebezpiecznej treści
 Name:		php-pear-%{_pearname}
-Version:	0.9.9
-Release:	2
+Version:	0.10.1
+Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}beta.tgz
-# Source0-md5:	8bbe8a4b78d1f0f4a08aa3a4f97b242b
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	c544f2a49e7313c00c8bc77e79768e68
 URL:		http://pear.php.net/package/HTML_Safe/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-common >= 3:4.1.0
 Requires:	php-pear
+Requires:	php-pear-PEAR-core >= 1:1.6
 Requires:	php-pear-XML_HTMLSax3 >= 3.0.0-0.RC1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -41,6 +42,9 @@ Ta klasa ma w PEAR status: %{_status}.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %pear_package_install
+
+# don't care for tests
+rm -rf $RPM_BUILD_ROOT%{php_pear_dir}/tests/%{_pearname}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
