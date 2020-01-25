@@ -1,6 +1,5 @@
 %define		_status		beta
 %define		_pearname	HTML_Safe
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - strips down dangerous content
 Summary(pl.UTF-8):	%{_pearname} - wycinanie niebezpiecznej treści
 Name:		php-pear-%{_pearname}
